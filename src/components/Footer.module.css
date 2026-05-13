@@ -21,6 +21,10 @@
   font-weight: 600;
 }
 
+.nameAccent {
+  color: var(--accent);
+}
+
 .tag {
   margin: 0.15rem 0 0;
   font-size: 0.85rem;

@@ -7,7 +7,7 @@ export interface Motorcycle {
   model: string;
   tagline: string;
   year: number;
-  priceUsd: number;
+  priceRub: number;
   colors: MotoColor[];
   specs: {
     displacement: string;
@@ -31,7 +31,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Panigale V4 S",
     tagline: "Точность супербайка, рождённого на треке.",
     year: 2025,
-    priceUsd: 28995,
+    priceRub: 2_900_000,
     colors: ["red", "blue", "green"],
     specs: {
       displacement: "1 103 см³",
@@ -47,7 +47,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "CBR1000RR-R",
     tagline: "ДНК MotoGP — на дороге общего пользования.",
     year: 2025,
-    priceUsd: 28499,
+    priceRub: 2_850_000,
     colors: ["red", "blue", "green"],
     specs: {
       displacement: "999 см³",
@@ -63,7 +63,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "Ninja ZX-10R",
     tagline: "Чемпионская генетика и управляемость каждый день.",
     year: 2025,
-    priceUsd: 16999,
+    priceRub: 1_700_000,
     colors: ["red", "blue", "green"],
     specs: {
       displacement: "998 см³",
@@ -79,7 +79,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "GSX-R1000R",
     tagline: "Сбалансированная агрессия и выверенный ход.",
     year: 2025,
-    priceUsd: 17999,
+    priceRub: 1_800_000,
     colors: ["red", "blue", "green"],
     specs: {
       displacement: "999 см³",
@@ -95,7 +95,7 @@ export const MOTORCYCLES: Motorcycle[] = [
     model: "YZF-R1",
     tagline: "Кроссплейн-коленвал и богатая электроника.",
     year: 2025,
-    priceUsd: 18299,
+    priceRub: 1_830_000,
     colors: ["red", "blue", "green"],
     specs: {
       displacement: "998 см³",

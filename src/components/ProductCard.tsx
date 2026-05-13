@@ -11,7 +11,7 @@ type ProductCardProps = {
 function formatPrice(n: number): string {
   return new Intl.NumberFormat("ru-RU", {
     style: "currency",
-    currency: "USD",
+    currency: "RUB",
     maximumFractionDigits: 0,
   }).format(n);
 }
@@ -75,7 +75,7 @@ export function ProductCard({ motorcycle: m, onReserve }: ProductCardProps) {
         </dl>
         <div className={styles.footer}>
           <p className={styles.price}>
-            От <strong>{formatPrice(m.priceUsd)}</strong>
+            От <strong>{formatPrice(m.priceRub)}</strong>
           </p>
           <button type="button" className={styles.reserve} onClick={onReserve}>
             Забронировать

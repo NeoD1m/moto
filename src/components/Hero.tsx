@@ -22,7 +22,7 @@ export function Hero({ onBrowse }: HeroProps) {
               Смотреть каталог
             </button>
             <a className={styles.secondary} href="#experience">
-              Почему ApexMoto
+              О салоне
             </a>
           </div>
           <dl className={styles.stats}>

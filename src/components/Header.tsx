@@ -8,9 +8,9 @@ export function Header({ onBook }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <a href="#" className={styles.logo} aria-label="ApexMoto — на главную">
+        <a href="#" className={styles.logo} aria-label="АндрейКузнецов — на главную">
           <span className={styles.wordmark}>
-            Apex<span className={styles.wordmarkAccent}>Moto</span>
+            Андрей<span className={styles.wordmarkAccent}>Кузнецов</span>
           </span>
         </a>
         <nav className={styles.nav} aria-label="Основное меню">
