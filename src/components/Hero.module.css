@@ -1,0 +1,119 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2.5rem, 6vw, 5rem) 1.25rem clamp(3rem, 8vw, 6rem);
+  background-color: var(--bg-deep);
+  background-image:
+    linear-gradient(
+      105deg,
+      rgba(5, 5, 6, 0.93) 0%,
+      rgba(5, 5, 6, 0.82) 40%,
+      rgba(5, 5, 6, 0.55) 68%,
+      rgba(5, 5, 6, 0.35) 100%
+    ),
+    url("/images/landing.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copy {
+  max-width: 36rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.1rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  margin: 0 0 1.75rem;
+  max-width: 34rem;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.primary {
+  border: none;
+  font-weight: 600;
+  padding: 0.85rem 1.35rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+  color: #fafafa;
+  box-shadow: 0 12px 40px var(--accent-glow);
+  transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 48px var(--accent-glow);
+}
+
+.secondary {
+  font-weight: 600;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.secondary:hover {
+  border-color: var(--text-muted);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 1.25rem 0 0;
+  border-top: 1px solid var(--border);
+}
+
+.stats > div {
+  min-width: 0;
+}
+
+.dt {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.dd {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
